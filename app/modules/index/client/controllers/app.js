@@ -16,16 +16,16 @@
 
                 }).error(function(error){
                     console.log(error);
-                })
+                });
             }
         }]);
     angular.module('unitedvolunteers')
-        .controller('NavigationController', ['$scope', '$http', '$state', function($scope, $http, $state){
-            $scope.login = {username: $scope.login.username, password: $scope.login.password};
-            console.log($scope.login);
+        .controller('NavigationController', ['$scope', '$state', '$http', function($scope, $state, $http){
             $scope.logUserIn = function(){
-                $http.post('api/index/client/views/index', $scope.login).success(function (response) {
-                    localstorage.setItem('User-data', JSON.stringify(response));
+                $scope.login = {username: $scope.login.username, password: $scope.login.password};
+                console.log($scope.login);
+                $http.post('api/index/client/views/index', $scope.login).success(function () {
+                    localStorage.setItem('User-data', JSON.stringify($scope.login));
                 }).error(function(error){
                     console.error(error);
                 });

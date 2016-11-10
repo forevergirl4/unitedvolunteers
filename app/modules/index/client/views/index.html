@@ -73,7 +73,7 @@
                         <div id="logo"></div>
                         <div class="login-form">
                             <h1>United Volunteers</h1>
-                            <div ng-controller="NavigationController">
+                            <form class="form-group" ng-controller="NavigationController" ng-submit="logUserIn(login)">
                             <div class="form-group" style="width:90%">
                                 <div class="form-group">            <label>Username</label>
                                     <input type="text" class="form-input" placeholder="Username" ng-model="login.username">
@@ -82,13 +82,13 @@
                                 <div class="form-group"><label>Password</label>
                                     <input type="password" class="form-input" placeholder="Password" ng-model="login.password">
                                 </div>
-                            </div>
-
                         </div>
                         <div style="margin:auto;">
                             <button type="submit" class="btn-login" style="margin:auto;display:block" ng-click="logUserIn()">Log in</button>
                         </div>
+                            </form>
                             </div>
+
                         <div class="signup-form" style="margin-bottom:0px;">
                             <label style="text-align:center;margin-bottom:20px">Create an Account</label>
 
