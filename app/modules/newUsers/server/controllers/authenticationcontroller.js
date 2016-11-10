@@ -18,8 +18,8 @@ module.exports.login = function(req, res){
         }
 
         if(results && results.length === 1){
-            var userDara = results(0);
-            res.json({email: req.body.userName,
+            var userData = results(0);
+            res.json({username: req.body.username,
             _id: userData._id});
         }
     })

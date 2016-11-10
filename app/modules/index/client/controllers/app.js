@@ -20,12 +20,13 @@
             }
         }]);
     angular.module('unitedvolunteers')
-        .controller('NavigationController', ['$scope', '$state', '$http', function($scope, $state, $http){
+        .controller('NavigationController', ['$window','$scope', '$state', '$http', function($window, $scope, $state, $http){
             $scope.logUserIn = function(){
                 $scope.login = {username: $scope.login.username, password: $scope.login.password};
                 console.log($scope.login);
-                $http.post('api/index/client/views/index', $scope.login).success(function () {
-                    localStorage.setItem('User-data', JSON.stringify($scope.login));
+                $http.post('api/index/client/views/index', $scope.login).success(function (response) {
+                    localStorage.setItem('User-data', JSON.stringify(response));
+                    $window.location.href = 'app/modules/NewsFeed/views/newsfeed.html';
                 }).error(function(error){
                     console.error(error);
                 });
