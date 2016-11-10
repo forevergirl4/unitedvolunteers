@@ -1,6 +1,6 @@
 body {
     background-color: #d00025;
-    background-image: url(hands%20banner.jpg);
+    background-image: url(img/hands%20banner.jpg);
     background-position:top;
     background-size: 50%;
     background-repeat:repeat-x;
@@ -153,7 +153,7 @@ label {
 .btn-facebook {
 	margin-bottom:60px;
 	padding-left:30px;
-    background-image: url(fb.gif);
+    background-image: url(img/fb.gif);
     background-color: #3b5998;
     padding: 0px;
     border: 3px solid white;
@@ -170,7 +170,7 @@ label {
 	margin-bottom:60px;
 	top:50%;
 	padding-right:30px;
-    background-image: url(g+.gif);
+    background-image: url(img/g+.gif);
     background-color: #dc4a38;
     padding: 0px;
     border: 3px solid white;
