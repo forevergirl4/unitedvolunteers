@@ -1,0 +1,145 @@
+body {
+    background-color: #d00025;
+    background-image: url(css/handsbanner.jpg);
+    background-position:top;
+    background-size: 50%;
+    background-repeat:repeat-x;
+    padding: 0px;
+    margin: 0px;
+}
+
+.login-form {
+    margin: 25px auto 25px auto;
+    width: 25%;
+    background-color: white;
+    padding: 150px 50px 50px 50px;
+    box-shadow: 1px 5px 2px #330000;
+    z-index: -1;
+}
+
+.signup-form {
+    margin: 25px auto 25px auto;
+    width: 25%;
+    background-color: white;
+    padding: 50px 50px 50px 50px;
+    box-shadow: 1px 5px 2px #330000;
+    z-index: -1;
+}
+
+#logo {
+    background-image: url(css/uv.gif);
+    background-color: white;
+    background-size: 170px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 192px;
+    width: 192px;
+    margin: 22px auto auto auto;
+    padding: 0px;
+    border: 5px solid white;
+    box-shadow: 1px 3px 2px grey;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 100px auto 50px auto;
+}
+
+a {
+    text-decoration: none;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.form-input {
+    width: 100%;
+    display: block;
+    height: 25px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-family: sans-serif;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    line-height: 1.5;
+}
+.form-select {
+    width: 100%;
+    display: inline;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-family: sans-serif;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    line-height: 1.5;
+}
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+}
+.partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+}
+.btn-login {
+    background-color: firebrick;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    border: 1px solid firebrick;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px #330000;
+    width: 150px;
+
+}
+
+.btn-facebook {
+    background-image: url(css/fb.gif);
+    background-color: #3b5998;
+    padding: 0px;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px grey;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.btn-gmail {
+    background-image: url(css/g+.gif);
+    background-color: #dc4a38;
+    padding: 0px;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px grey;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+}
