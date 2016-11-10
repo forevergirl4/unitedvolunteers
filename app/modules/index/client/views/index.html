@@ -70,35 +70,48 @@
                         <!--</div>-->
                     <!--</section>-->
                     <div ui-view>
-                        <div id="logo"></div>
-                        <div class="login-form">
-                            <h1>United Volunteers</h1>
-                            <form class="form-group" ng-controller="NavigationController" ng-submit="logUserIn(login)">
-                            <div class="form-group" style="width:90%">
-                                <div class="form-group">            <label>Username</label>
-                                    <input type="text" class="form-input" placeholder="Username" ng-model="login.username">
-                                </div>
-
-                                <div class="form-group"><label>Password</label>
-                                    <input type="password" class="form-input" placeholder="Password" ng-model="login.password">
-                                </div>
-                        </div>
-                        <div style="margin:auto;">
-                            <button type="submit" class="btn-login" style="margin:auto;display:block" ng-click="logUserIn()">Log in</button>
-                        </div>
-                            </form>
-                            </div>
-
-                        <div class="signup-form" style="margin-bottom:0px;">
-                            <label style="text-align:center;margin-bottom:20px">Create an Account</label>
-
-                            <div>
-                                <a ui-sref="signUp" class="btn-login" style="margin:auto;display:block;text-align:center">Sign up free</a>
-                            </div>
-                            <label style="text-align:center;margin-bottom:20px;margin-top:20px">or</label>
-
-
-                        </div>
+                        <div class="col-md-offset-2 col-md-8 text-center">
+    	<div class="container-fluid">
+            <div id="logo">
+              <img class="img-responsive" src="uv.png">
+            </div> <!-- logo -->  
+          
+            <div class="login-form">
+              <h1>United Volunteers</h1>
+              	 <div ng-controller="NavigationController">      
+                      <div class="form-group">
+                        <label class="input-title">Username</label>
+                        <input type="text" class="form-input" placeholder="Username" ng-model="login.username">
+                      </div> <!-- form-group -->  
+                      
+                      <div class="form-group">
+                        <label class="input-title">Password</label>
+                        <input type="password" class="form-input" placeholder="Password" ng-model="login.password">
+                      </div> <!-- form-group --> 
+                 </div> <!-- NavigationController --> 
+            </div> <!-- login-form -->      
+    	</div> <!-- container-fluid -->
+    </div>  <!-- col -->
+    
+    <div class="col-md-offset-2 col-md-8 text-center">
+        <div class="container-fluid">
+        	<button type="submit" class="btn-login" ng-click="logUserIn()">Log in</button>
+            	<div class="signup-form">
+                	<label style="text-align:center;margin-bottom:20px">Create an Account</label>
+                    <label class="or"><span>or</span></label>
+                </div> <!-- signup-form -->
+        </div> <!-- container-fluid -->
+    
+        <div class="container-fluid">
+              <button type="submit" class="btn-signup">Sign Up Free</button>
+        </div> <!-- container-fluid -->
+        
+        <div class="social_media">
+            <button type="submit" class="btn-facebook"></button>
+            <button type="submit" class="btn-gmail"></button>
+        </div> <!-- social media -->
+    </div> <!-- col -->
+                    </div>
                         <div style="margin:auto">
         <span>
         <button type="submit" class="btn-facebook" style="display:block"></button>
